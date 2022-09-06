@@ -1,0 +1,37 @@
+
+# old
+# background 		#0c0d0e
+#
+# brighter
+# background 		#1a0b19
+#
+# darker
+background 		#140914
+foreground 		#b9dce7
+cursor 			#b9dce7
+selection_background 	#a1a8a8
+color0 			#222827
+color8 			#5d6f74
+
+color1 			#b27095
+color9 			#cb8bb6
+
+color2 			#91cbb7
+color10 		#c6eee0
+
+color3 			#5b9dec
+color11 		#71bcf7
+
+color4 			#83c5db
+color12 		#a8d7e4
+
+color5 			#ee8ed7
+color13 		#f7aee5
+
+color6 			#cb97e0
+color14 		#e9c8f5
+
+color7 			#a1a8a8
+color15 		#e1f7f5
+
+selection_foreground 	#e1f7f5
