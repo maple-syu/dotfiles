@@ -46,11 +46,13 @@ fi
 #xterm -geometry 80x20+494-0 &
 #exec xterm -geometry 80x66+0+0 -name login
 
+xrandr --output DP-2 --mode 2560x1440 --rate 120
 
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 xrdb -load ~/.Xresources
 #VBoxClient-all &
-picom --experimental-backends --config ~/.config/picom/picom.conf &
+#picom --experimental-backends --config ~/.config/picom/picom.conf &
+picom --config ~/.config/picom/picom.conf &
 #exec xrandr --output Virtual1 --mode 1920x1080 &
 nitrogen --restore &
 #exec i3

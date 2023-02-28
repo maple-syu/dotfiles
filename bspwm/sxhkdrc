@@ -9,7 +9,8 @@ super + Return
 
 # program launcher
 super + @space
-	rofi -modi drun,run -show drun
+    rlaunch
+#	rofi -modi drun,run -show drun
 #	dmenu_run
 
 # make sxhkd reload its configuration files:
@@ -125,8 +126,13 @@ super + {Left,Down,Up,Right}
 
 
 # Volume Controls
-XF86AudioRaiseVolume pactl set-sink-volume 0 +5%
-XF86AudioLowerVolume pactl set-sink-volume 0 -5%
-XF86AudioMutei pactl set-sink-mute 0 toggle
+XF86AudioRaiseVolume
+	pactl set-sink-volume @DEFAULT_SINK@ +5%
+XF86AudioLowerVolume 
+	pactl set-sink-volume @DEFAULT_SINK@ -5%
+# XF86AudioMutei pactl set-sink-mute 0 toggle
+# XF86AudioRaiseVolume amixer set Master 5%+ 
+# XF86AudioLowerVolume amixer set Master 5%- 
 
-
+# XF86AudioRaiseVolume amixer -D sset Master 5%+ unmute
+# XF86AudioLowerVolume amixer -D sset Master 5%- unmute

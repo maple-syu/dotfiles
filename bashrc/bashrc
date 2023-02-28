@@ -10,18 +10,31 @@ alias ls='ls --color=auto'
 
 PS1='\A [\u] \W > '
 
+# package managers
+alias pacupdate='sudo pacman -Syyu'
+alias pacinstall='sudo pacman -S'
+
+# ls shortcuts
 alias myhome='ls -la ~/'
 alias ll='ls -la'
+alias exl='exa -1la'
+
+# edit configs
 alias ekittyconf='sudo nvim ~/.config/kitty/kitty.conf'
 alias eneofetchconf='sudo nvim ~/.config/neofetch/config.conf'
 alias ebashrc='sudo nvim ~/.bashrc'
 alias ei3conf='sudo nvim ~/.config/i3/config'
 alias epolybarconf='sudo nvim ~/.config/polybar/config'
-alias atom-comp="atom --in-process-gpu"
-alias exinitrc="sudo nvim ~/.xinitrc"
-alias locallibs="export LD_LIBRARY_PATH=/usr/local/lib/"
+alias exinitrc='sudo nvim ~/.xinitrc'
+alias locallibs='export LD_LIBRARY_PATH=/usr/local/lib/'
+alias esxhkd='sudo nvim ~/.config/sxhkd/sxhkdrc'
+alias svim='sudo nvim'
 
-alias nfa="neofetch --ascii ~/.config/neofetch/ascii2"
+# custom neofetch
+alias neofetch='neofetch --ascii ~/.config/neofetch/ascii2'
+
+# some folder paths
+alias mapleproj='cd ~/Projects'
 
 # BEGIN_KITTY_SHELL_INTEGRATION
 if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
